@@ -1,0 +1,13 @@
+name: 'PR body description'
+description: 'Gets the PR body for a GH PR'
+inputs:
+  pattern:
+    description: 'Pattern to match'
+outputs:
+  pr_body: # id of output
+    description: 'Body of the PR'
+  value:
+    description: 'Matched value'
+runs:
+  using: 'node16'
+  main: 'index.js'
