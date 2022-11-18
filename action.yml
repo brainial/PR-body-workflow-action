@@ -10,4 +10,4 @@ outputs:
     description: 'Matched value'
 runs:
   using: 'node16'
-  main: 'index.js'
+  main: 'main.ts'
