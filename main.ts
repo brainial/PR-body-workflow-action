@@ -1,5 +1,5 @@
-const github = require("@actions/github");
-const core = require("@actions/core");
+import * as github from "@actions/github";
+import * as core from "@actions/core";
 
 try {
   const pattern = core.getInput("pattern");
@@ -12,5 +12,5 @@ try {
     core.setOutput("value", match);
   }
 } catch (error) {
-  core.setFailed(error.message);
+  core.setFailed(error instanceof Error ? error.message : String(error));
 }
