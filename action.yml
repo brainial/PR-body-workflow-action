@@ -9,5 +9,5 @@ outputs:
   value:
     description: 'Matched value'
 runs:
-  using: 'node16'
-  main: 'main.ts'
+  using: 'node24'
+  main: 'dist/index.js'
